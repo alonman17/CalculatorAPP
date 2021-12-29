@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="main-theme.css" />
+    
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <section class="calculator">
+      <div class="top-section">
+        <h1>calc</h1>
+        <div class="right-top-section">
+          <div>THEME</div>
+          <div class="theme-toggle">
+            
+            <div class="theme-numbers">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <input type="range" min="0" max="2" value="0" id="theme-slider">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="result-box">
+        <div style="display:flex">
+          <div id="previous-operand" ></div>
+          <div id="current-Operator"></div>
+        </div>
+        <div id="current-operand" ></div>
+      </div>
+      <div class="calculator-buttons">
+        <div class="number-buttons">
+         
+            <button class="number-btn" data-number>7</button>
+            <button class="number-btn" data-number>8</button>
+            <button class="number-btn" data-number>9</button>
+            <button class="number-btn del-btn" data-delete>DEL</button>
+       
+   
+            <button class="number-btn" data-number>4</button>
+            <button class="number-btn" data-number>5</button>
+            <button class="number-btn" data-number>6</button>
+            <button class="number-btn" data-operator>+</button>
+  
+       
+            <button class="number-btn" data-number>1</button>
+            <button class="number-btn" data-number>2</button>
+            <button class="number-btn" data-number>3</button>
+            <button class="number-btn" data-operator>-</button>
+  
+ 
+            <button class="number-btn" data-number>.</button>
+            <button class="number-btn" data-number>0</button>
+            <button class="number-btn" data-operator>/</button>
+            <button class="number-btn" data-operator>X</button>
+   
+            <button class="number-btn RESET-btn" data-RESET>RESET</button>
+            <button class="number-btn equals-btn" data-EQUALS>=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="starwarsAPI">
+      Random star wars data:
+      <div id="swapiData" class="starwarsRender"></div>
+    </section>
+  </body>
+  <script src="index.js" type="module"></script>
+  <script src="style-change.js" type="module"></script>
+</html>
